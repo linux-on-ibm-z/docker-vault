@@ -17,6 +17,7 @@ RUN set -eux; \
         aarch64) ARCH='arm64' ;; \
         x86_64) ARCH='amd64' ;; \
         x86) ARCH='386' ;; \
+        s390x) ARCH='s390x' ;; \
         *) echo >&2 "error: unsupported architecture: $apkArch"; exit 1 ;; \
     esac && \
     VAULT_GPGKEY=91A6E7F85D05C65630BEF18951852D87348FFC4C; \
